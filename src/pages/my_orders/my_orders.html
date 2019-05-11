@@ -1,0 +1,249 @@
+<ion-header class="header_bg bg-transparent">
+    <ion-navbar>
+        <ion-title>{{'my_orders' | translate}}
+            <span class="icon_box end">
+                <ion-icon><img src="assets/imgs/ic_search_wt.png"></ion-icon>
+                <ion-icon><img src="assets/imgs/ic_cart_wt.png">
+                    <ion-badge item-end>2</ion-badge>
+                </ion-icon>
+            </span>
+        </ion-title>
+    </ion-navbar>
+    <ion-scroll scrollX="true">
+        <ion-segment [(ngModel)]="order_tab">
+            <ion-segment-button value="all">
+                {{'all' | translate}}
+            </ion-segment-button>
+            <ion-segment-button value="recharges">
+                {{'recharges' | translate}}
+            </ion-segment-button>
+            <ion-segment-button value="trickets">
+                {{'tickets' | translate}}
+            </ion-segment-button>
+            <ion-segment-button value="bill">
+                {{'bill' | translate}}
+            </ion-segment-button>
+            <ion-segment-button value="shopping">
+                {{'shopping' | translate}}
+            </ion-segment-button>
+            <ion-segment-button value="travel">
+                {{'travel' | translate}}
+            </ion-segment-button>
+            <ion-segment-button value="deals">
+                {{'deals' | translate}}
+            </ion-segment-button>
+        </ion-segment>
+    </ion-scroll>
+</ion-header>
+
+<ion-content class="bg-color">
+    <div class="tab_container" [ngSwitch]="order_tab">
+        <ion-list no-lines *ngSwitchCase="'all'">
+            <ion-item>
+                <h2 class="d-flex">{{'order_num' | translate}} 221454 <span class="end">$ 10.00</span></h2>
+                <p>2 Dec, 2018, 03:14 pm</p>
+                <div class="order_details d-flex">
+                    <div class="order_img">
+                        <img src="assets/imgs/order1.png">
+                    </div>
+                    <div class="order_text">
+                        <h3>Recharge Done !</h3>
+                        <p>AT&T +1 987 654 3210</p>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item>
+                <h2 class="d-flex">{{'order_num' | translate}} 115478 <span class="end">$ 25.00</span></h2>
+                <p>1 Dec, 2018, 04:45 pm</p>
+                <div class="order_details d-flex">
+                    <div class="order_img">
+                        <img src="assets/imgs/order2.png">
+                    </div>
+                    <div class="order_text">
+                        <h3>Ordered Successful !</h3>
+                        <p>Spyware White cotton Shirt</p>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item>
+                <h2 class="d-flex">{{'order_num' | translate}} 998745 <span class="end">$ 81.00</span></h2>
+                <p>2 Dec, 2018, 03:14 pm</p>
+                <div class="order_details d-flex">
+                    <div class="order_img">
+                        <img src="assets/imgs/order3.png">
+                    </div>
+                    <div class="order_text">
+                        <h3>Electricity Bill paid </h3>
+                        <p>City Power Electricity Board</p>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item>
+                <h2 class="d-flex">{{'order_num' | translate}} 211355 <span class="end">$ 100.00</span></h2>
+                <p>2 Dec, 2018, 03:14 pm</p>
+                <div class="order_details d-flex">
+                    <div class="order_img">
+                        <img src="assets/imgs/ic_bus.png">
+                    </div>
+                    <div class="order_text">
+                        <h3>Ticket Payment Done</h3>
+                        <p>AC bus from NY To KY</p>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item>
+                <h2 class="d-flex">{{'order_num' | translate}} 221454 <span class="end">$ 10.00</span></h2>
+                <p>2 Dec, 2018, 03:14 pm</p>
+                <div class="order_details d-flex">
+                    <div class="order_img">
+                        <img src="assets/imgs/order1.png">
+                    </div>
+                    <div class="order_text">
+                        <h3>Recharge Done !</h3>
+                        <p>AT&T +1 987 654 3210</p>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item>
+                <h2 class="d-flex">{{'order_num' | translate}} 115478 <span class="end">$ 25.00</span></h2>
+                <p>1 Dec, 2018, 04:45 pm</p>
+                <div class="order_details d-flex">
+                    <div class="order_img">
+                        <img src="assets/imgs/order2.png">
+                    </div>
+                    <div class="order_text">
+                        <h3>Ordered Successful !</h3>
+                        <p>Spyware White cotton Shirt</p>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item>
+                <h2 class="d-flex">{{'order_num' | translate}} 998745 <span class="end">$ 81.00</span></h2>
+                <p>2 Dec, 2018, 03:14 pm</p>
+                <div class="order_details d-flex">
+                    <div class="order_img">
+                        <img src="assets/imgs/order3.png">
+                    </div>
+                    <div class="order_text">
+                        <h3>Electricity Bill paid </h3>
+                        <p>City Power Electricity Board</p>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item>
+                <h2 class="d-flex">{{'order_num' | translate}} 211355 <span class="end">$ 100.00</span></h2>
+                <p>2 Dec, 2018, 03:14 pm</p>
+                <div class="order_details d-flex">
+                    <div class="order_img">
+                        <img src="assets/imgs/ic_bus.png">
+                    </div>
+                    <div class="order_text">
+                        <h3>Ticket Payment Done</h3>
+                        <p>AC bus from NY To KY</p>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list no-lines *ngSwitchCase="'recharges'">
+            <ion-item>
+                <h2 class="d-flex">{{'order_num' | translate}} 221454 <span class="end">$ 10.00</span></h2>
+                <p>2 Dec, 2018, 03:14 pm</p>
+                <div class="order_details d-flex">
+                    <div class="order_img">
+                        <img src="assets/imgs/order1.png">
+                    </div>
+                    <div class="order_text">
+                        <h3>Recharge Done !</h3>
+                        <p>AT&T +1 987 654 3210</p>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list no-lines *ngSwitchCase="'trickets'">
+            <ion-item>
+                <h2 class="d-flex">{{'order_num' | translate}} 211355 <span class="end">$ 100.00</span></h2>
+                <p>2 Dec, 2018, 03:14 pm</p>
+                <div class="order_details d-flex">
+                    <div class="order_img">
+                        <img src="assets/imgs/ic_bus.png">
+                    </div>
+                    <div class="order_text">
+                        <h3>Ticket Payment Done</h3>
+                        <p>AC bus from NY To KY</p>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list no-lines *ngSwitchCase="'bill'">
+            <ion-item>
+                <h2 class="d-flex">{{'order_num' | translate}} 998745 <span class="end">$ 81.00</span></h2>
+                <p>2 Dec, 2018, 03:14 pm</p>
+                <div class="order_details d-flex">
+                    <div class="order_img">
+                        <img src="assets/imgs/order3.png">
+                    </div>
+                    <div class="order_text">
+                        <h3>Electricity Bill paid </h3>
+                        <p>City Power Electricity Board</p>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+        <ion-list no-lines *ngSwitchCase="'shopping'">
+            <ion-item>
+                <h2 class="d-flex">{{'order_num' | translate}} 115478 <span class="end">$ 25.00</span></h2>
+                <p>1 Dec, 2018, 04:45 pm</p>
+                <div class="order_details d-flex">
+                    <div class="order_img">
+                        <img src="assets/imgs/order2.png">
+                    </div>
+                    <div class="order_text">
+                        <h3>Ordered Successful !</h3>
+                        <p>Spyware White cotton Shirt</p>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list no-lines *ngSwitchCase="'travel'">
+            <ion-item>
+                <h2 class="d-flex">{{'order_num' | translate}} 211355 <span class="end">$ 100.00</span></h2>
+                <p>2 Dec, 2018, 03:14 pm</p>
+                <div class="order_details d-flex">
+                    <div class="order_img">
+                        <img src="assets/imgs/ic_bus.png">
+                    </div>
+                    <div class="order_text">
+                        <h3>Ticket Payment Done</h3>
+                        <p>AC bus from NY To KY</p>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list no-lines *ngSwitchCase="'deals'">
+            <ion-item>
+                <h2 class="d-flex">{{'order_num' | translate}} 115478 <span class="end">$ 25.00</span></h2>
+                <p>1 Dec, 2018, 04:45 pm</p>
+                <div class="order_details d-flex">
+                    <div class="order_img">
+                        <img src="assets/imgs/order2.png">
+                    </div>
+                    <div class="order_text">
+                        <h3>Ordered Successful !</h3>
+                        <p>Spyware White cotton Shirt</p>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>

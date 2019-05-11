@@ -1,0 +1,7 @@
+{
+  "name": "quickpay",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

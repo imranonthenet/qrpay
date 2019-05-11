@@ -1,0 +1,96 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>search</ion-title>
+    </ion-navbar>
+
+    <ion-searchbar (ionInput)="getItems($event)" placeholder="{{'search_placeholder' | translate}}"></ion-searchbar>
+</ion-header>
+
+<ion-content class="bg-color">
+    <div class="recente_searches">
+        <h3>{{'recente_searches' | translate}}</h3>
+        <h2>Train Bookng</h2>
+        <h2>Your Broadbad</h2>
+        <h2>Buy Shirt</h2>
+    </div>
+
+    <div class="quick_links">
+        <h3>{{'quick_links' | translate}}</h3>
+        <ion-scroll scrollX="true">
+            <div class="links" (click)="phonerecharge()">
+                <img src="assets/imgs/ic_recharge.png">
+                <h6>{{'recharge' | translate}}</h6>
+            </div>
+            <div class="links">
+                <img src="assets/imgs/ic_electricity.png">
+                <h6>{{'electricity' | translate}}</h6>
+            </div>
+            <div class="links" (click)="book_ticket()">
+                <img src="assets/imgs/ic_train.png">
+                <h6>{{'train_ticket' | translate}}</h6>
+            </div>
+            <div class="links" (click)="book_ticket()">
+                <img src="assets/imgs/ic_flights.png">
+                <h6>{{'flights' | translate}}</h6>
+            </div>
+            <div class="links" (click)="book_ticket()">
+                <img src="assets/imgs/ic_bus.png">
+                <h6>{{'bus' | translate}}</h6>
+            </div>
+            <div class="links">
+                <img src="assets/imgs/ic_dth.png">
+                <h6>{{'dth' | translate}}</h6>
+            </div>
+            <div class="links">
+                <img src="assets/imgs/ic_broadband.png">
+                <h6>{{'boradband' | translate}}</h6>
+            </div>
+            <div class="links">
+                <img src="assets/imgs/ic_more.png">
+                <h6>{{'more' | translate}}</h6>
+            </div>
+        </ion-scroll>
+    </div>
+    <ion-list no-lines>
+        <ion-card>
+            <div class="card_bg center_img">
+                <img src="assets/imgs/card_bg2.png" class="crop_img">
+            </div>
+            <h2>{{'save_on_bill_payments' | translate}}</h2>
+            <ion-scroll scrollX="true">
+                <ion-item>
+                    <h3>Upto 80% Cashback every hour</h3>
+                    <div class="text d-flex">
+                        <p>Get upto 80% Cashback on any bill payment every hour.</p>
+                        <h4 text-center class="end">{{'know_more' | translate}}</h4>
+                    </div>
+                    <h6><sup>*</sup>{{'t_c_apply' | translate}}</h6>
+                </ion-item>
+                <ion-item>
+                    <h3>Upto 80% Cashback every hour</h3>
+                    <div class="text d-flex">
+                        <p>Get upto 80% Cashback on any bill payment every hour.</p>
+                        <h4 text-center class="end">{{'know_more' | translate}}</h4>
+                    </div>
+                    <h6><sup>*</sup>{{'t_c_apply' | translate}}</h6>
+                </ion-item>
+                <ion-item>
+                    <h3>Upto 80% Cashback every hour</h3>
+                    <div class="text d-flex">
+                        <p>Get upto 80% Cashback on any bill payment every hour.</p>
+                        <h4 text-center class="end">{{'know_more' | translate}}</h4>
+                    </div>
+                    <h6><sup>*</sup>{{'t_c_apply' | translate}}</h6>
+                </ion-item>
+                <ion-item>
+                    <h3>Upto 80% Cashback every hour</h3>
+                    <div class="text d-flex">
+                        <p>Get upto 80% Cashback on any bill payment every hour.</p>
+                        <h4 text-center class="end">{{'know_more' | translate}}</h4>
+                    </div>
+                    <h6><sup>*</sup>{{'t_c_apply' | translate}}</h6>
+                </ion-item>
+            </ion-scroll>
+        </ion-card>
+    </ion-list>
+</ion-content>
