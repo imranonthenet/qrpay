@@ -16,7 +16,8 @@ signin(){
         this.navCtrl.setRoot(SigninPage)
   } 
 tabs(){
-        this.navCtrl.setRoot(TabsPage)
+        //this.navCtrl.setRoot(TabsPage)
+        this.navCtrl.setRoot(SigninPage)
   } 
 
 }

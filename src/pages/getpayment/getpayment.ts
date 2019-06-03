@@ -20,6 +20,9 @@ export class GetpaymentPage implements OnInit {
 
   }
 
+  onCancel() {
+    this.navCtrl.pop();
+  }
   ngOnInit() {
 
     // this.authService.getActiveUser().getIdToken()

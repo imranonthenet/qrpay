@@ -1,8 +1,9 @@
 <ion-header>
     <ion-navbar>
         <ion-title>
-            <img src="assets/imgs/logo2.png">
-            <ion-icon class="material-icons end">share</ion-icon>
+            <img src="assets/imgs/logo3.png">
+            <!--<ion-icon class="material-icons end">share</ion-icon> -->
+            
         </ion-title>
     </ion-navbar>
 </ion-header>
@@ -19,10 +20,10 @@
                 qrc-errorCorrectionLevel = "L">
             </ngx-qrcode>
         </div>
-        <h3 text-uppercase>Samantha smith</h3>
-        <p>+ 987 654 3210</p>
+        <p text-uppercase *ngIf="!qrcode">Please wait while we generate the QR Code...</p>
+        <!-- <p>+ 987 654 3210</p> -->
     </div>
 </ion-content>
 <ion-footer no-border>
-    <button ion-button block clear class="btn"> {{'download_qr_code' | translate}}</button>
+    <button ion-button block clear class="btn" (click)="onCancel()"> {{'cancel' | translate}}</button>
 </ion-footer>

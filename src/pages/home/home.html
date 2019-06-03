@@ -5,27 +5,31 @@
     </ion-navbar>
 -->
     <ion-list no-lines>
-        <ion-item class="search" (click)="search()">
-            <h2>{{'quick' | translate}}<span class="text-theme">{{'v' | translate}}</span></h2>
-            <img src="assets/imgs/ic_search.png" item-end>
+       
+        <ion-item class="search" >
+            <!-- <h2>{{'urway' | translate}}<span class="text-theme"> {{'customer' | translate}}</span></h2>
+            <img src="assets/imgs/ic_search.png" item-end> -->
+            <h1>&nbsp;</h1>
+            <h2>{{'welcome' | translate}}</h2>
+            <h2><span class="text-theme"> {{ customer.fullname }}</span></h2>
         </ion-item>
         <ion-item class="">
             <ion-row text-center>
-                <ion-col col-3 (click)="pay_or_send()">
+                <ion-col col-3 (click)="getpayment() ">
                     <img src="assets/imgs/ic_pay.png">
                     <h6>{{'pay_or_send' | translate}}</h6>
                 </ion-col>
-                <ion-col col-3 (click)="addmoney()">
+                <ion-col col-3 >
                     <img src="assets/imgs/ic_add_money.png">
-                    <h6>{{'add_money' | translate}}</h6>
+                    <h6>{{'add_card' | translate}}</h6>
                 </ion-col>
-                <ion-col col-3 (click)="getpayment()">
+                <!-- <ion-col col-3 (click)="pay_or_send()">
                     <img src="assets/imgs/ic_get_payment.png">
                     <h6>{{'get_payment' | translate}}</h6>
-                </ion-col>
+                </ion-col> -->
                 <ion-col col-3 (click)="transaction()">
                     <img src="assets/imgs/ic_transactions.png">
-                    <h6>{{'transaction' | translate}}</h6>
+                    <h6>{{'transactions' | translate}}</h6>
                 </ion-col>
             </ion-row>
         </ion-item>
@@ -35,6 +39,121 @@
 <ion-content class="bg-color">
     <ion-list no-lines>
         <ion-card>
+                <ion-list no-lines>
+                        <ion-item>
+                            <h2 class="d-flex">{{'order_num' | translate}} 221454 <span class="end">SAR 100.00</span></h2>
+                            <p>2 Dec, 2018, 03:14 pm</p>
+                            <div class="order_details d-flex">
+                                <div class="order_img">
+                                    <img src="assets/imgs/order1.png">
+                                </div>
+                                <div class="order_text">
+                                    <h3>Tamimi Market</h3>
+                                    <p>Grocery</p>
+                                </div>
+                            </div>
+                        </ion-item>
+            
+                        <ion-item>
+                            <h2 class="d-flex">{{'order_num' | translate}} 115478 <span class="end">SAR 125.00</span></h2>
+                            <p>1 Dec, 2018, 04:45 pm</p>
+                            <div class="order_details d-flex">
+                                <div class="order_img">
+                                    <img src="assets/imgs/order2.png">
+                                </div>
+                                <div class="order_text">
+                                    <h3>City Max</h3>
+                                    <p>Garments</p>
+                                </div>
+                            </div>
+                        </ion-item>
+            
+                        <ion-item>
+                            <h2 class="d-flex">{{'order_num' | translate}} 998745 <span class="end">SAR 81.00</span></h2>
+                            <p>2 Dec, 2018, 03:14 pm</p>
+                            <div class="order_details d-flex">
+                                <div class="order_img">
+                                    <img src="assets/imgs/order3.png">
+                                </div>
+                                <div class="order_text">
+                                    <h3>EXTRA</h3>
+                                    <p>Electronics</p>
+                                </div>
+                            </div>
+                        </ion-item>
+            
+                        <ion-item>
+                            <h2 class="d-flex">{{'order_num' | translate}} 211355 <span class="end">SAR 200.00</span></h2>
+                            <p>2 Dec, 2018, 03:14 pm</p>
+                            <div class="order_details d-flex">
+                                <div class="order_img">
+                                    <img src="assets/imgs/ic_bus.png">
+                                </div>
+                                <div class="order_text">
+                                    <h3>IKEA</h3>
+                                    <p>Furniture</p>
+                                </div>
+                            </div>
+                        </ion-item>
+                        <ion-item>
+                            <h2 class="d-flex">{{'order_num' | translate}} 221454 <span class="end">SAR 10.00</span></h2>
+                            <p>2 Dec, 2018, 03:14 pm</p>
+                            <div class="order_details d-flex">
+                                <div class="order_img">
+                                    <img src="assets/imgs/order1.png">
+                                </div>
+                                <div class="order_text">
+                                    <h3>Yamal Asham</h3>
+                                    <p>Restaurant</p>
+                                </div>
+                            </div>
+                        </ion-item>
+            
+                        <ion-item>
+                            <h2 class="d-flex">{{'order_num' | translate}} 115478 <span class="end">SAR 25.00</span></h2>
+                            <p>1 Dec, 2018, 04:45 pm</p>
+                            <div class="order_details d-flex">
+                                <div class="order_img">
+                                    <img src="assets/imgs/order2.png">
+                                </div>
+                                <div class="order_text">
+                                    <h3>HERFY</h3>
+                                    <p>Fast Food</p>
+                                </div>
+                            </div>
+                        </ion-item>
+            
+                        <ion-item>
+                            <h2 class="d-flex">{{'order_num' | translate}} 998745 <span class="end">SAR 20.00</span></h2>
+                            <p>2 Dec, 2018, 03:14 pm</p>
+                            <div class="order_details d-flex">
+                                <div class="order_img">
+                                    <img src="assets/imgs/order3.png">
+                                </div>
+                                <div class="order_text">
+                                    <h3>Burger King </h3>
+                                    <p>Fast Food</p>
+                                </div>
+                            </div>
+                        </ion-item>
+            
+                        <ion-item>
+                            <h2 class="d-flex">{{'order_num' | translate}} 211355 <span class="end">SAR 50.00</span></h2>
+                            <p>2 Dec, 2018, 03:14 pm</p>
+                            <div class="order_details d-flex">
+                                <div class="order_img">
+                                    <img src="assets/imgs/ic_bus.png">
+                                </div>
+                                <div class="order_text">
+                                    <h3>Mama Noora</h3>
+                                    <p>Restaurant</p>
+                                </div>
+                            </div>
+                        </ion-item>
+                    </ion-list>
+          
+        </ion-card>
+        <!-- <ion-card>
             <div class="card_bg center_img">
                 <img src="assets/imgs/card_bg1.png" class="crop_img">
             </div>
@@ -75,9 +194,9 @@
                     </ion-col>
                 </ion-row>
             </ion-item>
-        </ion-card>
+        </ion-card> -->
 
-        <ion-card>
+        <!-- <ion-card>
             <div class="card_bg center_img">
                 <img src="assets/imgs/card_bg2.png" class="crop_img">
             </div>
@@ -116,6 +235,6 @@
                     <h6><sup>*</sup>{{'t_c_apply' | translate}}</h6>
                 </ion-item>
             </ion-scroll>
-        </ion-card>
+        </ion-card> -->
     </ion-list>
 </ion-content>

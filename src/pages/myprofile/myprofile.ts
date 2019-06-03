@@ -22,6 +22,7 @@ export class MyprofilePage implements OnInit {
   }
 
   ngOnInit() {
+    
     this.authService.getActiveUser().getIdToken()
       .then((token: string) => {
         this.customerService.getCustomer(token).subscribe(

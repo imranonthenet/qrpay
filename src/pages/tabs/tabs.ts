@@ -12,9 +12,9 @@ import { AccountPage } from '../account/account';
 export class TabsPage {
 
   tab1Root = HomePage;
-  tab2Root = MallPage;
- tab3Root =Pay_or_sendPage;
-  tab4Root =  My_ordersPage ;
+  tab2Root = HomePage;//MallPage;
+  tab3Root = HomePage;//Pay_or_sendPage;
+  tab4Root = HomePage;//My_ordersPage ;
   tab5Root = AccountPage;
 
    constructor() {

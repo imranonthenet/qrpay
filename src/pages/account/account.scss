@@ -1,6 +1,6 @@
 page-account {
     .header {
-        height: 200px;
+        height: 250px;
 
         .toolbar .title .toolbar-title {
             color: $white;
@@ -53,7 +53,7 @@ page-account {
 
         &.header_bg {
             &::after {
-                height: 200px;
+                height: 250px;
             }
         }
 

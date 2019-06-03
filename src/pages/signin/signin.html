@@ -30,7 +30,7 @@
                 </ion-item>
             </ion-list>
             <button text-uppercase ion-button block class="btn" type="submit" [disabled]="!f.valid"> {{'sign_in' | translate}}</button>
-
+            <button text-uppercase ion-button block class="btn" (click)="signup()">{{'register_now' | translate}}</button>
         </form>
     </div>
 
@@ -49,7 +49,7 @@
 
 
 </ion-content>
-<ion-footer no-border>
+<!-- <ion-footer no-border>
     <p text-center no-margin>{{'not_registered_yet' | translate}}</p>
     <button text-uppercase ion-button block class="btn" (click)="signup()">{{'register_now' | translate}}</button>
-</ion-footer>
+</ion-footer> -->

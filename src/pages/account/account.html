@@ -7,7 +7,7 @@
             <img src="assets/imgs/profile_pic.png">
         </div>
         <div class="name_box">
-            <h2>Sam Smith</h2>
+            <h2>{{ customer.fullname }}</h2>
             <h3>{{'view_profile' | translate}}</h3>
         </div>
     </div>
@@ -15,7 +15,7 @@
 
 <ion-content class="bg-color">
     <ion-list no-lines>
-        <ion-item (click)="favorited()">
+        <!-- <ion-item (click)="favorited()">
             <div class="icon_box" item-start>
                 <img src="assets/imgs/ic_settings.png">
             </div>
@@ -26,19 +26,19 @@
                 <img src="assets/imgs/ic_invite.png">
             </div>
             <h2>{{'notifications' | translate}}</h2>
-        </ion-item>
+        </ion-item> -->
         <ion-item (click)="help()">
             <div class="icon_box" item-start>
                 <img src="assets/imgs/ic_help.png">
             </div>
             <h2>{{'need_help' | translate}}</h2>
         </ion-item>
-        <ion-item>
+        <!-- <ion-item>
             <div class="icon_box" item-start>
                 <img src="assets/imgs/ic_rate.png">
             </div>
             <h2>{{'rate_us' | translate}}</h2>
-        </ion-item>
+        </ion-item> -->
         <ion-item (click)="condition()">
             <div class="icon_box" item-start>
                 <img src="assets/imgs/ic_guideline.png">
