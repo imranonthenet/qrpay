@@ -27,7 +27,7 @@
         "@ionic-native/status-bar": "4.3.2",
         "@ngx-translate/core": "^9.1.1",
         "@ngx-translate/http-loader": "^2.0.1",
-        "cordova-android": "^7.1.1",
+        "cordova-android": "^11.0.0",
         "cordova-ios": "^5.0.1",
         "cordova-plugin-device": "^2.0.2",
         "cordova-plugin-ionic-keyboard": "^2.1.3",
